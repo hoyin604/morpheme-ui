@@ -1,0 +1,718 @@
+/* .m-float */
+@media screen and (max-width: 767px) { /* --mobile */
+  .m-float--mobile>*, /* --mobile */
+  ul.item-list.m-float--mobile>li,
+  ul.item-list.m-float-recu--mobile li,
+  .row.m-float--mobile>.col,
+  .row.m-c2-float--mobile>.col,
+  .row.m-c3-float--mobile>.col,
+  .row.m-c4-float--mobile>.col,
+  .row.m-float-recu--mobile .col,
+  .row.m-c2-float-recu--mobile .col,
+  .row.m-c3-float-recu--mobile .col,
+  .row.m-c4-float-recu--mobile .col,
+  .m-float--mobile--tablet>*, /* --mobile--tablet */
+  ul.item-list.m-float--mobile--tablet>li,
+  ul.item-list.m-float-recu--mobile--tablet li,
+  .row.m-float--mobile--tablet>.col,
+  .row.m-c2-float--mobile--tablet>.col,
+  .row.m-c3-float--mobile--tablet>.col,
+  .row.m-c4-float--mobile--tablet>.col,
+  .row.m-float-recu--mobile--tablet .col,
+  .row.m-c2-float-recu--mobile--tablet .col,
+  .row.m-c3-float-recu--mobile--tablet .col,
+  .row.m-c4-float-recu--mobile--tablet .col {
+    float:left;
+    display:block;
+  }
+  html[dir=rtl] .m-float--mobile>*, /* --mobile */
+  html[dir=rtl] ul.item-list.m-float--mobile>li,
+  html[dir=rtl] ul.item-list.m-float-recu--mobile li,
+  html[dir=rtl] .row.m-float--mobile>.col,
+  html[dir=rtl] .row.m-c2-float--mobile>.col,
+  html[dir=rtl] .row.m-c3-float--mobile>.col,
+  html[dir=rtl] .row.m-c4-float--mobile>.col,
+  html[dir=rtl] .row.m-float-recu--mobile .col,
+  html[dir=rtl] .row.m-c2-float-recu--mobile .col,
+  html[dir=rtl] .row.m-c3-float-recu--mobile .col,
+  html[dir=rtl] .row.m-c4-float-recu--mobile .col,
+  html[dir=rtl] .m-float--mobile--tablet>*, /* --mobile--tablet */
+  html[dir=rtl] ul.item-list.m-float--mobile--tablet>li,
+  html[dir=rtl] ul.item-list.m-float-recu--mobile--tablet li,
+  html[dir=rtl] .row.m-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-c2-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-c3-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-c4-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-float-recu--mobile--tablet .col,
+  html[dir=rtl] .row.m-c2-float-recu--mobile--tablet .col,
+  html[dir=rtl] .row.m-c3-float-recu--mobile--tablet .col,
+  html[dir=rtl] .row.m-c4-float-recu--mobile--tablet .col {
+    float: right;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .m-float--tablet>*, /* --tablet */
+  ul.item-list.m-float--tablet>li,
+  ul.item-list.m-float-recu--tablet li,
+  .row.m-float--tablet>.col,
+  .row.m-c2-float--tablet>.col,
+  .row.m-c3-float--tablet>.col,
+  .row.m-c4-float--tablet>.col,
+  .row.m-float-recu--tablet .col,
+  .row.m-c2-float-recu--tablet .col,
+  .row.m-c3-float-recu--tablet .col,
+  .row.m-c4-float-recu--tablet .col,
+  .m-float--mobile--tablet>*, /* --mobile--tablet */
+  ul.item-list.m-float--mobile--tablet>li,
+  ul.item-list.m-float-recu--mobile--tablet li,
+  .row.m-float--mobile--tablet>.col,
+  .row.m-c2-float--mobile--tablet>.col,
+  .row.m-c3-float--mobile--tablet>.col,
+  .row.m-c4-float--mobile--tablet>.col,
+  .row.m-float-recu--mobile--tablet .col,
+  .row.m-c2-float-recu--mobile--tablet .col,
+  .row.m-c3-float-recu--mobile--tablet .col,
+  .row.m-c4-float-recu--mobile--tablet .col,
+  .m-float--tablet--desktop>*, /* --tablet--desktop */
+  ul.item-list.m-float--tablet--desktop>li,
+  ul.item-list.m-float-recu--tablet--desktop li,
+  .row.m-float--tablet--desktop>.col,
+  .row.m-c2-float--tablet--desktop>.col,
+  .row.m-c3-float--tablet--desktop>.col,
+  .row.m-c4-float--tablet--desktop>.col,
+  .row.m-float-recu--tablet--desktop .col,
+  .row.m-c2-float-recu--tablet--desktop .col,
+  .row.m-c3-float-recu--tablet--desktop .col,
+  .row.m-c4-float-recu--tablet--desktop .col {
+    float:left;
+    display:block;
+  }
+  html[dir=rtl] .m-float--mobile>*, /* --mobile */
+  html[dir=rtl] ul.item-list.m-float--mobile>li,
+  html[dir=rtl] ul.item-list.m-float-recu--mobile li,
+  html[dir=rtl] .row.m-float--mobile>.col,
+  html[dir=rtl] .row.m-c2-float--mobile>.col,
+  html[dir=rtl] .row.m-c3-float--mobile>.col,
+  html[dir=rtl] .row.m-c4-float--mobile>.col,
+  html[dir=rtl] .row.m-float-recu--mobile .col,
+  html[dir=rtl] .row.m-c2-float-recu--mobile .col,
+  html[dir=rtl] .row.m-c3-float-recu--mobile .col,
+  html[dir=rtl] .row.m-c4-float-recu--mobile .col,
+  html[dir=rtl] .m-float--mobile--tablet>*, /* --mobile--tablet */
+  html[dir=rtl] ul.item-list.m-float--mobile--tablet>li,
+  html[dir=rtl] ul.item-list.m-float-recu--mobile--tablet li,
+  html[dir=rtl] .row.m-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-c2-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-c3-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-c4-float--mobile--tablet>.col,
+  html[dir=rtl] .row.m-float-recu--mobile--tablet .col,
+  html[dir=rtl] .row.m-c2-float-recu--mobile--tablet .col,
+  html[dir=rtl] .row.m-c3-float-recu--mobile--tablet .col,
+  html[dir=rtl] .row.m-c4-float-recu--mobile--tablet .col,
+  html[dir=rtl] .m-float--tablet--desktop>*, /* --tablet--desktop */
+  html[dir=rtl] ul.item-list.m-float--tablet--desktop>li,
+  html[dir=rtl] ul.item-list.m-float-recu--tablet--desktop li,
+  html[dir=rtl] .row.m-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-c2-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-c3-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-c4-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-float-recu--tablet--desktop .col,
+  html[dir=rtl] .row.m-c2-float-recu--tablet--desktop .col,
+  html[dir=rtl] .row.m-c3-float-recu--tablet--desktop .col,
+  html[dir=rtl] .row.m-c4-float-recu--tablet--desktop .col {
+    float: right;
+  }
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .m-float--desktop>*, /* --desktop */
+  ul.item-list.m-float--desktop>li,
+  ul.item-list.m-float-recu--desktop li,
+  .row.m-float--desktop>.col,
+  .row.m-c2-float--desktop>.col,
+  .row.m-c3-float--desktop>.col,
+  .row.m-c4-float--desktop>.col,
+  .row.m-float-recu--desktop .col,
+  .row.m-c2-float-recu--desktop .col,
+  .row.m-c3-float-recu--desktop .col,
+  .row.m-c4-float-recu--desktop .col,
+  .m-float--tablet--desktop>*, /* --tablet--desktop */
+  ul.item-list.m-float--tablet--desktop>li,
+  ul.item-list.m-float-recu--tablet--desktop li,
+  .row.m-float--tablet--desktop>.col,
+  .row.m-c2-float--tablet--desktop>.col,
+  .row.m-c3-float--tablet--desktop>.col,
+  .row.m-c4-float--tablet--desktop>.col,
+  .row.m-float-recu--tablet--desktop .col,
+  .row.m-c2-float-recu--tablet--desktop .col,
+  .row.m-c3-float-recu--tablet--desktop .col,
+  .row.m-c4-float-recu--tablet--desktop .col {
+    float:left;
+    display:block;
+  }
+  html[dir=rtl] .m-float--desktop>*, /* --desktop */
+  html[dir=rtl] ul.item-list.m-float--desktop>li,
+  html[dir=rtl] ul.item-list.m-float-recu--desktop li,
+  html[dir=rtl] .row.m-float--desktop>.col,
+  html[dir=rtl] .row.m-c2-float--desktop>.col,
+  html[dir=rtl] .row.m-c3-float--desktop>.col,
+  html[dir=rtl] .row.m-c4-float--desktop>.col,
+  html[dir=rtl] .row.m-float-recu--desktop .col,
+  html[dir=rtl] .row.m-c2-float-recu--desktop .col,
+  html[dir=rtl] .row.m-c3-float-recu--desktop .col,
+  html[dir=rtl] .row.m-c4-float-recu--desktop .col,
+  html[dir=rtl] .m-float--tablet--desktop>*, /* --tablet--desktop */
+  html[dir=rtl] ul.item-list.m-float--tablet--desktop>li,
+  html[dir=rtl] ul.item-list.m-float-recu--tablet--desktop li,
+  html[dir=rtl] .row.m-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-c2-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-c3-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-c4-float--tablet--desktop>.col,
+  html[dir=rtl] .row.m-float-recu--tablet--desktop .col,
+  html[dir=rtl] .row.m-c2-float-recu--tablet--desktop .col,
+  html[dir=rtl] .row.m-c3-float-recu--tablet--desktop .col,
+  html[dir=rtl] .row.m-c4-float-recu--tablet--desktop .col {
+    float: right;
+  }
+}
+
+/* .inline */
+@media screen and (max-width: 767px) { /* --mobile */
+  .m-inline--mobile>*, /* --mobile */
+  ul.item-list.m-inline--mobile>li,
+  ul.item-list.m-inline-recu--mobile li,
+  .row.m-inline--mobile>.col,
+  .row.m-c2-inline--mobile>.col,
+  .row.m-c3-inline--mobile>.col,
+  .row.m-c4-inline--mobile>.col,
+  .row.m-inline-recu--mobile .col,
+  .row.m-c2-inline-recu--mobile .col,
+  .row.m-c3-inline-recu--mobile .col,
+  .row.m-c4-inline-recu--mobile .col,
+  .m-inline--mobile--tablet>*, /* --mobile--tablet */
+  ul.item-list.m-inline--mobile--tablet>li,
+  ul.item-list.m-inline-recu--mobile--tablet li,
+  .row.m-inline--mobile--tablet>.col,
+  .row.m-c2-inline--mobile--tablet>.col,
+  .row.m-c3-inline--mobile--tablet>.col,
+  .row.m-c4-inline--mobile--tablet>.col,
+  .row.m-inline-recu--mobile--tablet .col,
+  .row.m-c2-inline-recu--mobile--tablet .col,
+  .row.m-c3-inline-recu--mobile--tablet .col,
+  .row.m-c4-inline-recu--mobile--tablet .col {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .m-inline--tablet>*, /* --mobile */
+  ul.item-list.m-inline--tablet>li,
+  ul.item-list.m-inline-recu--tablet li,
+  .row.m-inline--tablet>.col,
+  .row.m-c2-inline--tablet>.col,
+  .row.m-c3-inline--tablet>.col,
+  .row.m-c4-inline--tablet>.col,
+  .row.m-inline-recu--tablet .col,
+  .row.m-c2-inline-recu--tablet .col,
+  .row.m-c3-inline-recu--tablet .col,
+  .row.m-c4-inline-recu--tablet .col,
+  .m-inline--mobile--tablet>*, /* --mobile--tablet */
+  ul.item-list.m-inline--mobile--tablet>li,
+  ul.item-list.m-inline-recu--mobile--tablet li,
+  .row.m-inline--mobile--tablet>.col,
+  .row.m-c2-inline--mobile--tablet>.col,
+  .row.m-c3-inline--mobile--tablet>.col,
+  .row.m-c4-inline--mobile--tablet>.col,
+  .row.m-inline-recu--mobile--tablet .col,
+  .row.m-c2-inline-recu--mobile--tablet .col,
+  .row.m-c3-inline-recu--mobile--tablet .col,
+  .row.m-c4-inline-recu--mobile--tablet .col,
+  .m-inline--tablet--desktop>*, /* --tablet--desktop */
+  ul.item-list.m-inline--tablet--desktop>li,
+  ul.item-list.m-inline-recu--tablet--desktop li,
+  .row.m-inline--tablet--desktop>.col,
+  .row.m-c2-inline--tablet--desktop>.col,
+  .row.m-c3-inline--tablet--desktop>.col,
+  .row.m-c4-inline--tablet--desktop>.col,
+  .row.m-inline-recu--tablet--desktop .col,
+  .row.m-c2-inline-recu--tablet--desktop .col,
+  .row.m-c3-inline-recu--tablet--desktop .col,
+  .row.m-c4-inline-recu--tablet--desktop .col {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .m-inline--desktop>*, /* --desktop */
+  ul.item-list.m-inline--desktop>li,
+  ul.item-list.m-inline-recu--desktop li,
+  .row.m-inline--desktop>.col,
+  .row.m-c2-inline--desktop>.col,
+  .row.m-c3-inline--desktop>.col,
+  .row.m-c4-inline--desktop>.col,
+  .row.m-inline-recu--desktop .col,
+  .row.m-c2-inline-recu--desktop .col,
+  .row.m-c3-inline-recu--desktop .col,
+  .row.m-c4-inline-recu--desktop .col,
+  .m-inline--tablet--desktop>*, /* --tablet--desktop */
+  ul.item-list.m-inline--tablet--desktop>li,
+  ul.item-list.m-inline-recu--tablet--desktop li,
+  .row.m-inline--tablet--desktop>.col,
+  .row.m-c2-inline--tablet--desktop>.col,
+  .row.m-c3-inline--tablet--desktop>.col,
+  .row.m-c4-inline--tablet--desktop>.col,
+  .row.m-inline-recu--tablet--desktop .col,
+  .row.m-c2-inline-recu--tablet--desktop .col,
+  .row.m-c3-inline-recu--tablet--desktop .col,
+  .row.m-c4-inline-recu--tablet--desktop .col {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+/* .m-flex */
+@media screen and (max-width: 767px) { /* --mobile */
+  .m-flex--mobile,/* --mobile */
+  ul.item-list.m-flex--mobile,
+  ul.item-list.m-flex-recu--mobile ul,
+  .row.m-flex--mobile,
+  .row.m-flex-recu--mobile .row,
+  .row.m-c2-flex--mobile,
+  .row.m-c2-flex-recu--mobile .row,
+  .row.m-c3-flex--mobile,
+  .row.m-c3-flex-recu--mobile .row,
+  .row.m-c4-flex--mobile,
+  .row.m-c4-flex-recu--mobile .row,
+
+  .m-flex--mobile--tablet,/* --mobile--tablet */
+  ul.item-list.m-flex--mobile--tablet,
+  ul.item-list.m-flex-recu--mobile--tablet ul,
+  .row.m-flex--mobile--tablet,
+  .row.m-flex-recu--mobile--tablet .row,
+  .row.m-c2-flex--mobile--tablet,
+  .row.m-c2-flex-recu--mobile--tablet .row,
+  .row.m-c3-flex--mobile--tablet,
+  .row.m-c3-flex-recu--mobile--tablet .row,
+  .row.m-c4-flex--mobile--tablet,
+  .row.m-c4-flex-recu--mobile--tablet .row {
+    display: -ms-flexbox;
+    display:      flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .m-flex--tablet,/* --tablet */
+  ul.item-list.m-flex--tablet,
+  ul.item-list.m-flex-recu--tablet ul,
+  .row.m-flex--tablet,
+  .row.m-flex-recu--tablet .row,
+  .row.m-c2-flex--tablet,
+  .row.m-c2-flex-recu--tablet .row,
+  .row.m-c3-flex--tablet,
+  .row.m-c3-flex-recu--tablet .row,
+  .row.m-c4-flex--tablet,
+  .row.m-c4-flex-recu--tablet .row,
+  .m-flex--mobile--tablet,/* --mobile--tablet */
+  ul.item-list.m-flex--mobile--tablet,
+  ul.item-list.m-flex-recu--mobile--tablet ul,
+  .row.m-flex--mobile--tablet,
+  .row.m-flex-recu--mobile--tablet .row,
+  .row.m-c2-flex--mobile--tablet,
+  .row.m-c2-flex-recu--mobile--tablet .row,
+  .row.m-c3-flex--mobile--tablet,
+  .row.m-c3-flex-recu--mobile--tablet .row,
+  .row.m-c4-flex--mobile--tablet,
+  .row.m-c4-flex-recu--mobile--tablet .row,
+
+  .m-flex--tablet--desktop,/* --tablet--desktop */
+  ul.item-list.m-flex--tablet--desktop,
+  ul.item-list.m-flex-recu--tablet--desktop ul,
+  .row.m-flex--tablet--desktop,
+  .row.m-flex-recu--tablet--desktop .row,
+  .row.m-c2-flex--tablet--desktop,
+  .row.m-c2-flex-recu--tablet--desktop .row,
+  .row.m-c3-flex--tablet--desktop,
+  .row.m-c3-flex-recu--tablet--desktop .row,
+  .row.m-c4-flex--tablet--desktop,
+  .row.m-c4-flex-recu--tablet--desktop .row {
+    display: -ms-flexbox;
+    display:      flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .m-flex--desktop,/* --desktop */
+  ul.item-list.m-flex--desktop,
+  ul.item-list.m-flex-recu--desktop ul,
+  .row.m-flex--desktop,
+  .row.m-flex-recu--desktop .row,
+  .row.m-c2-flex--desktop,
+  .row.m-c2-flex-recu--desktop .row,
+  .row.m-c3-flex--desktop,
+  .row.m-c3-flex-recu--desktop .row,
+  .row.m-c4-flex--desktop,
+  .row.m-c4-flex-recu--desktop .row,
+  .m-flex--tablet--desktop,/* --tablet--desktop */
+  ul.item-list.m-flex--tablet--desktop,
+  ul.item-list.m-flex-recu--tablet--desktop ul,
+  .row.m-flex--tablet--desktop,
+  .row.m-flex-recu--tablet--desktop .row,
+  .row.m-c2-flex--tablet--desktop,
+  .row.m-c2-flex-recu--tablet--desktop .row,
+  .row.m-c3-flex--tablet--desktop,
+  .row.m-c3-flex-recu--tablet--desktop .row,
+  .row.m-c4-flex--tablet--desktop,
+  .row.m-c4-flex-recu--tablet--desktop .row {
+    display: -ms-flexbox;
+    display:      flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) { /* --mobile */
+  .m-flex--mobile>*, /* --mobile */
+  ul.item-list.m-flex--mobile>li,
+  ul.item-list.m-flex-recu--mobile li,
+  .row.m-flex--mobile>.col,
+  .row.m-c2-flex--mobile>.col,
+  .row.m-c3-flex--mobile>.col,
+  .row.m-c4-flex--mobile>.col,
+  .row.m-flex-recu--mobile .col,
+  .row.m-c2-flex-recu--mobile .col,
+  .row.m-c3-flex-recu--mobile .col,
+  .row.m-c4-flex-recu--mobile .col,
+  .m-flex--mobile--tablet>*, /* --mobile--tablet */
+  ul.item-list.m-flex--mobile--tablet>li,
+  ul.item-list.m-flex-recu--mobile--tablet li,
+  .row.m-flex--mobile--tablet>.col,
+  .row.m-c2-flex--mobile--tablet>.col,
+  .row.m-c3-flex--mobile--tablet>.col,
+  .row.m-c4-flex--mobile--tablet>.col,
+  .row.m-flex-recu--mobile--tablet .col,
+  .row.m-c2-flex-recu--mobile--tablet .col,
+  .row.m-c3-flex-recu--mobile--tablet .col,
+  .row.m-c4-flex-recu--mobile--tablet .col {
+    -ms-flex-preferred-size: 0;
+    -ms-flex-positive: 1;
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .m-flex--tablet>*, /* --tablet */
+  ul.item-list.m-flex--tablet>li,
+  ul.item-list.m-flex-recu--tablet li,
+  .row.m-flex--tablet>.col,
+  .row.m-c2-flex--tablet>.col,
+  .row.m-c3-flex--tablet>.col,
+  .row.m-c4-flex--tablet>.col,
+  .row.m-flex-recu--tablet .col,
+  .row.m-c2-flex-recu--tablet .col,
+  .row.m-c3-flex-recu--tablet .col,
+  .row.m-c4-flex-recu--tablet .col,
+  .m-flex--mobile--tablet>*, /* --mobile--tablet */
+  ul.item-list.m-flex--mobile--tablet>li,
+  ul.item-list.m-flex-recu--mobile--tablet li,
+  .row.m-flex--mobile--tablet>.col,
+  .row.m-c2-flex--mobile--tablet>.col,
+  .row.m-c3-flex--mobile--tablet>.col,
+  .row.m-c4-flex--mobile--tablet>.col,
+  .row.m-flex-recu--mobile--tablet .col,
+  .row.m-c2-flex-recu--mobile--tablet .col,
+  .row.m-c3-flex-recu--mobile--tablet .col,
+  .row.m-c4-flex-recu--mobile--tablet .col,
+  .m-flex--tablet--desktop>*, /* --tablet--desktop */
+  ul.item-list.m-flex--tablet--desktop>li,
+  ul.item-list.m-flex-recu--tablet--desktop li,
+  .row.m-flex--tablet--desktop>.col,
+  .row.m-c2-flex--tablet--desktop>.col,
+  .row.m-c3-flex--tablet--desktop>.col,
+  .row.m-c4-flex--tablet--desktop>.col,
+  .row.m-flex-recu--tablet--desktop .col,
+  .row.m-c2-flex-recu--tablet--desktop .col,
+  .row.m-c3-flex-recu--tablet--desktop .col,
+  .row.m-c4-flex-recu--tablet--desktop .col {
+    -ms-flex-preferred-size: 0;
+    -ms-flex-positive: 1;
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .m-flex--desktop>*, /* --desktop */
+  ul.item-list.m-flex--desktop>li,
+  ul.item-list.m-flex-recu--desktop li,
+  .row.m-flex--desktop>.col,
+  .row.m-c2-flex--desktop>.col,
+  .row.m-c3-flex--desktop>.col,
+  .row.m-c4-flex--desktop>.col,
+  .row.m-flex-recu--desktop .col,
+  .row.m-c2-flex-recu--desktop .col,
+  .row.m-c3-flex-recu--desktop .col,
+  .row.m-c4-flex-recu--desktop .col,
+  .m-flex--tablet--desktop>*, /* --tablet--desktop */
+  ul.item-list.m-flex--tablet--desktop>li,
+  ul.item-list.m-flex-recu--tablet--desktop li,
+  .row.m-flex--tablet--desktop>.col,
+  .row.m-c2-flex--tablet--desktop>.col,
+  .row.m-c3-flex--tablet--desktop>.col,
+  .row.m-c4-flex--tablet--desktop>.col,
+  .row.m-flex-recu--tablet--desktop .col,
+  .row.m-c2-flex-recu--tablet--desktop .col,
+  .row.m-c3-flex-recu--tablet--desktop .col,
+  .row.m-c4-flex-recu--tablet--desktop .col {
+    -ms-flex-preferred-size: 0;
+    -ms-flex-positive: 1;
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) { /* --mobile */
+  .row.m-c2-float--mobile>.col {float:left; width:50%;}
+  .row.m-c3-float--mobile>.col {float:left; width:33.33%;}
+  .row.m-c4-float--mobile>.col {float:left; width:25%;}
+  .row.m-float>.col.full--mobile,
+  .row.m-c2-float>.col.full--mobile, .row.m-c3-float>.col.full--mobile, .row.m-c4-float>.col.full--mobile,
+  .row.m-c2-float-recu .col.full--mobile, .row.m-c3-float-recu .col.full--mobile, .row.m-c4-float-recu .col.full--mobile {
+    width: 100%; float: none; clear: both;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .c2--tablet.row.m-float>.col {float:left; width:50%;}
+  .c3--tablet.row.m-float>.col {float:left; width:33.33%;}
+  .c4--tablet.row.m-float>.col {float:left; width:25%;}
+  .row.m-float>.col.full--tablet {width:100%; float:none; clear: both;}
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .c2--desktop.row.m-float>.col {float:left; width:50%;}
+  .c3--desktop.row.m-float>.col {float:left; width:33.33%;}
+  .c4--desktop.row.m-float>.col {float:left; width:25%;}
+  .col.full--desktop {width:100%; float:none; clear: both;}
+}
+@media screen and (max-width: 991px) { /* --mobile--tablet */
+  .c2--mobile--tablet.row.m-float>.col {float:left; width:50%;}
+  .c3--mobile--tablet.row.m-float>.col {float:left; width:33.33%;}
+  .c4--mobile--tablet.row.m-float>.col {float:left; width:25%;}
+  .row.m-float>.col.full--mobile--tablet {width:100%; float:none; clear: both;}
+}
+@media screen and (min-width: 768px) { /* --tablet--desktop */
+  .c2--tablet--desktop.row.m-float>.col {float:left; width:50%;}
+  .c3--tablet--desktop.row.m-float>.col {float:left; width:33.33%;}
+  .c4--tablet--desktop.row.m-float>.col {float:left; width:25%;}
+  .row.m-float>.col.full--tablet--desktop {width:100%; float:none; clear: both;}
+}
+
+@media screen and (max-width: 767px) { /* --mobile */
+  .c2--mobile--tablet.row.m-float>.col.x2--mobile, .c2--mobile.row.m-float>.col.x2--mobile--tablet, .c2--mobile.row.m-float>.col.x2--mobile, .c2.row.m-float>.col.x2--mobile, .c2--mobile.row.m-float>.col.x2 {width: 100%;}
+  .c3--mobile--tablet.row.m-float>.col.x2--mobile, .c3--mobile.row.m-float>.col.x2--mobile--tablet, .c3--mobile.row.m-float>.col.x2--mobile, .c3.row.m-float>.col.x2--mobile, .c3--mobile.row.m-float>.col.x2 {width: 66.66%;}
+  .c4--mobile--tablet.row.m-float>.col.x2--mobile, .c4--mobile.row.m-float>.col.x2--mobile--tablet, .c4--mobile.row.m-float>.col.x2--mobile, .c4.row.m-float>.col.x2--mobile, .c4--mobile.row.m-float>.col.x2 {width: 50%;}
+  .c3--mobile--tablet.row.m-float>.col.x3--mobile, .c3--mobile.row.m-float>.col.x3--mobile--tablet, .c3--mobile.row.m-float>.col.x3--mobile, .c3.row.m-float>.col.x3--mobile, .c3--mobile.row.m-float>.col.x3 {width: 100%;}
+  .c4--mobile--tablet.row.m-float>.col.x3--mobile, .c4--mobile.row.m-float>.col.x3--mobile--tablet, .c4--mobile.row.m-float>.col.x3--mobile, .c4.row.m-float>.col.x3--mobile, .c4--mobile.row.m-float>.col.x3 {width: 75%;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .c2--tablet--desktop.row.m-float>.col.x2--tablet, .c2--tablet.row.m-float>.col.x2--tablet--desktop, .c2--mobile--tablet.row.m-float>.col.x2--tablet, .c2--tablet.row.m-float>.col.x2--mobile--tablet, .c2--tablet.row.m-float>.col.x2--tablet, .c2.row.m-float>.col.x2--tablet, .c2--tablet.row.m-float>.col.x2 {width: 100%;}
+  .c3--tablet--desktop.row.m-float>.col.x2--tablet, .c3--tablet.row.m-float>.col.x2--tablet--desktop, .c3--mobile--tablet.row.m-float>.col.x2--tablet, .c3--tablet.row.m-float>.col.x2--mobile--tablet, .c3--tablet.row.m-float>.col.x2--tablet, .c3.row.m-float>.col.x2--tablet, .c3--tablet.row.m-float>.col.x2 {width: 66.66%;}
+  .c4--tablet--desktop.row.m-float>.col.x2--tablet, .c4--tablet.row.m-float>.col.x2--tablet--desktop, .c4--mobile--tablet.row.m-float>.col.x2--tablet, .c4--tablet.row.m-float>.col.x2--mobile--tablet, .c4--tablet.row.m-float>.col.x2--tablet, .c4.row.m-float>.col.x2--tablet, .c4--tablet.row.m-float>.col.x2 {width: 50%;}
+  .c3--tablet--desktop.row.m-float>.col.x3--tablet, .c3--tablet.row.m-float>.col.x3--tablet--desktop, .c3--mobile--tablet.row.m-float>.col.x3--tablet, .c3--tablet.row.m-float>.col.x3--mobile--tablet, .c3--tablet.row.m-float>.col.x3--tablet, .c3.row.m-float>.col.x3--tablet, .c3--tablet.row.m-float>.col.x3 {width: 100%;}
+  .c4--tablet--desktop.row.m-float>.col.x3--tablet, .c4--tablet.row.m-float>.col.x3--tablet--desktop, .c4--mobile--tablet.row.m-float>.col.x3--tablet, .c4--tablet.row.m-float>.col.x3--mobile--tablet, .c4--tablet.row.m-float>.col.x3--tablet, .c4.row.m-float>.col.x3--tablet, .c4--tablet.row.m-float>.col.x3 {width: 75%;}
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .c2--tablet--desktop.row.m-float>.col.x2--desktop, .c2--desktop.row.m-float>.col.x2--tablet--desktop, .c2--desktop.row.m-float>.col.x2--desktop, .c2.row.m-float>.col.x2--desktop, .c2--desktop.row.m-float>.col.x2 {width: 100%;}
+  .c3--tablet--desktop.row.m-float>.col.x2--desktop, .c3--desktop.row.m-float>.col.x2--tablet--desktop, .c3--desktop.row.m-float>.col.x2--desktop, .c3.row.m-float>.col.x2--desktop, .c3--desktop.row.m-float>.col.x2 {width: 66.66%;}
+  .c4--tablet--desktop.row.m-float>.col.x2--desktop, .c4--desktop.row.m-float>.col.x2--tablet--desktop, .c4--desktop.row.m-float>.col.x2--desktop, .c4.row.m-float>.col.x2--desktop, .c4--desktop.row.m-float>.col.x2 {width: 50%;}
+  .c3--tablet--desktop.row.m-float>.col.x3--desktop, .c3--desktop.row.m-float>.col.x3--tablet--desktop, .c3--desktop.row.m-float>.col.x3--desktop, .c3.row.m-float>.col.x3--desktop, .c3--desktop.row.m-float>.col.x3 {width: 100%;}
+  .c4--tablet--desktop.row.m-float>.col.x3--desktop, .c4--desktop.row.m-float>.col.x3--tablet--desktop, .c4--desktop.row.m-float>.col.x3--desktop, .c4.row.m-float>.col.x3--desktop, .c4--desktop.row.m-float>.col.x3 {width: 75%;}
+}
+@media screen and (max-width: 991px) { /* --mobile--tablet */
+  .c2--mobile--tablet.row.m-float>.col.x2--mobile--tablet, .c2.row.m-float>.col.x2--mobile--tablet, .c2--mobile--tablet.row.m-float>.col.x2 {width: 100%;}
+  .c3--mobile--tablet.row.m-float>.col.x2--mobile--tablet, .c3.row.m-float>.col.x2--mobile--tablet, .c3--mobile--tablet.row.m-float>.col.x2 {width: 66.66%;}
+  .c4--mobile--tablet.row.m-float>.col.x2--mobile--tablet, .c4.row.m-float>.col.x2--mobile--tablet, .c4--mobile--tablet.row.m-float>.col.x2 {width: 50%;}
+  .c3--mobile--tablet.row.m-float>.col.x3--mobile--tablet, .c3.row.m-float>.col.x3--mobile--tablet, .c3--mobile--tablet.row.m-float>.col.x3 {width: 100%;}
+  .c4--mobile--tablet.row.m-float>.col.x3--mobile--tablet, .c4.row.m-float>.col.x3--mobile--tablet, .c4--mobile--tablet.row.m-float>.col.x3 {width: 75%;}
+}
+@media screen and (min-width: 768px) { /* --tablet--desktop */
+  .c2--tablet--desktop.row.m-float>.col.x2--tablet--desktop, .c2.row.m-float>.col.x2--tablet--desktop, .c2--tablet--desktop.row.m-float>.col.x2 {width: 100%;}
+  .c3--tablet--desktop.row.m-float>.col.x2--tablet--desktop, .c3.row.m-float>.col.x2--tablet--desktop, .c3--tablet--desktop.row.m-float>.col.x2 {width: 66.66%;}
+  .c4--tablet--desktop.row.m-float>.col.x2--tablet--desktop, .c4.row.m-float>.col.x2--tablet--desktop, .c4--tablet--desktop.row.m-float>.col.x2 {width: 50%;}
+  .c3--tablet--desktop.row.m-float>.col.x3--tablet--desktop, .c3.row.m-float>.col.x3--tablet--desktop, .c3--tablet--desktop.row.m-float>.col.x3 {width: 100%;}
+  .c4--tablet--desktop.row.m-float>.col.x3--tablet--desktop, .c4.row.m-float>.col.x3--tablet--desktop, .c4--tablet--desktop.row.m-float>.col.x3 {width: 75%;}
+}
+
+@media screen and (max-width: 767px) { /* --mobile */
+  .row.m-c2-flex--mobile>.col,
+  .row.m-c2-flex-recu--mobile .col,
+  .row.m-c2-flex--mobile--tablet>.col,
+  .row.m-c2-flex-recu--mobile--tablet .col {
+    flex-basis: 50%;
+  }
+  .row.m-c3-flex--mobile>.col,
+  .row.m-c3-flex-recu--mobile .col,
+  .row.m-c3-flex--mobile--tablet>.col,
+  .row.m-c3-flex-recu--mobile--tablet .col {
+    flex-basis: 33.33%;
+   }
+  .row.m-c4-flex--mobile>.col,
+  .row.m-c4-flex-recu--mobile .col,
+  .row.m-c4-flex--mobile--tablet>.col,
+  .row.m-c4-flex-recu--mobile--tablet .col {
+    flex-basis: 25%;
+  }
+  .row.m-flex--mobile>.col.full,
+  .row.m-c2-flex--mobile>.col.full,
+  .row.m-c3-flex--mobile>.col.full,
+  .row.m-c4-flex--mobile>.col.full,
+  .row.m-flex-recu--mobile .col.full,
+  .row.m-c2-flex-recu--mobile .col.full,
+  .row.m-c3-flex-recu--mobile .col.full,
+  .row.m-c4-flex-recu--mobile .col.full,
+
+  .row.m-flex>.col.full--mobile,
+  .row.m-c2-flex>.col.full--mobile,
+  .row.m-c3-flex>.col.full--mobile,
+  .row.m-c4-flex>.col.full--mobile,
+  .row.m-flex-recu .col.full--mobile,
+  .row.m-c2-flex-recu .col.full--mobile,
+  .row.m-c3-flex-recu .col.full--mobile,
+  .row.m-c4-flex-recu .col.full--mobile,
+
+  .row.m-flex--mobile--tablet>.col.full,
+  .row.m-c2-flex--mobile--tablet>.col.full,
+  .row.m-c3-flex--mobile--tablet>.col.full,
+  .row.m-c4-flex--mobile--tablet>.col.full,
+  .row.m-flex-recu--mobile--tablet .col.full,
+  .row.m-c2-flex-recu--mobile--tablet .col.full,
+  .row.m-c3-flex-recu--mobile--tablet .col.full,
+  .row.m-c4-flex-recu--mobile--tablet .col.full,
+
+  .row.m-flex>.col.full--mobile--tablet,
+  .row.m-c2-flex>.col.full--mobile--tablet,
+  .row.m-c3-flex>.col.full--mobile--tablet,
+  .row.m-c4-flex>.col.full--mobile--tablet,
+  .row.m-flex-recu .col.full--mobile--tablet,
+  .row.m-c2-flex-recu .col.full--mobile--tablet,
+  .row.m-c3-flex-recu .col.full--mobile--tablet,
+  .row.m-c4-flex-recu .col.full--mobile--tablet,
+
+  .row.m-flex--mobile--tablet>.col.full--mobile,
+  .row.m-c2-flex--mobile--tablet>.col.full--mobile,
+  .row.m-c3-flex--mobile--tablet>.col.full--mobile,
+  .row.m-c4-flex--mobile--tablet>.col.full--mobile,
+  .row.m-flex-recu--mobile--tablet .col.full--mobile,
+  .row.m-c2-flex-recu--mobile--tablet .col.full--mobile,
+  .row.m-c3-flex-recu--mobile--tablet .col.full--mobile,
+  .row.m-c4-flex-recu--mobile--tablet .col.full--mobile,
+
+  .row.m-flex--mobile>.col.full--mobile--tablet,
+  .row.m-c2-flex--mobile>.col.full--mobile--tablet,
+  .row.m-c3-flex--mobile>.col.full--mobile--tablet,
+  .row.m-c4-flex--mobile>.col.full--mobile--tablet,
+  .row.m-flex-recu--mobile .col.full--mobile--tablet,
+  .row.m-c2-flex-recu--mobile .col.full--mobile--tablet,
+  .row.m-c3-flex-recu--mobile .col.full--mobile--tablet,
+  .row.m-c4-flex-recu--mobile .col.full--mobile--tablet,
+
+  .row.m-flex--mobile--tablet>.col.full--mobile--tablet,
+  .row.m-c2-flex--mobile--tablet>.col.full--mobile--tablet,
+  .row.m-c3-flex--mobile--tablet>.col.full--mobile--tablet,
+  .row.m-c4-flex--mobile--tablet>.col.full--mobile--tablet,
+  .row.m-flex-recu--mobile--tablet .col.full--mobile--tablet,
+  .row.m-c2-flex-recu--mobile--tablet .col.full--mobile--tablet,
+  .row.m-c3-flex-recu--mobile--tablet .col.full--mobile--tablet,
+  .row.m-c4-flex-recu--mobile--tablet .col.full--mobile--tablet {
+    flex-basis: 100%;
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .c2--tablet.row.m-flex>.col {flex-basis: 50%;}
+  .c3--tablet.row.m-flex>.col {flex-basis: 33.33%;}
+  .c4--tablet.row.m-flex>.col {flex-basis: 25%;}
+  .row.m-flex>.col.full--tablet {flex-basis: 100%;}
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .c2--desktop.row.m-flex>.col {flex-basis: 50%;}
+  .c3--desktop.row.m-flex>.col {flex-basis: 33.33%;}
+  .c4--desktop.row.m-flex>.col {flex-basis: 25%;}
+  .row.m-flex>.col.full--desktop {flex-basis: 100%;}
+}
+
+@media screen and (max-width: 767px) { /* --mobile */
+  .row.m-flex>.col.x2--mobile {flex-grow: 2;}
+  .row.m-flex>.col.x3--mobile {flex-grow: 3;}
+  .c2--mobile--tablet.row.m-flex>.col.x2--mobile, .c2--mobile.row.m-flex>.col.x2--mobile--tablet, .c2--mobile.row.m-flex>.col.x2--mobile, .c2.row.m-flex>.col.x2--mobile, .c2--mobile.row.m-flex>.col.x2 {flex-basis: 100%;}
+  .c3--mobile--tablet.row.m-flex>.col.x2--mobile, .c3--mobile.row.m-flex>.col.x2--mobile--tablet, .c3--mobile.row.m-flex>.col.x2--mobile, .c3.row.m-flex>.col.x2--mobile, .c3--mobile.row.m-flex>.col.x2 {flex-basis: 66.66%;}
+  .c4--mobile--tablet.row.m-flex>.col.x2--mobile, .c4--mobile.row.m-flex>.col.x2--mobile--tablet, .c4--mobile.row.m-flex>.col.x2--mobile, .c4.row.m-flex>.col.x2--mobile, .c4--mobile.row.m-flex>.col.x2 {flex-basis: 50%;}
+  .c3--mobile--tablet.row.m-flex>.col.x3--mobile, .c3--mobile.row.m-flex>.col.x3--mobile--tablet, .c3--mobile.row.m-flex>.col.x3--mobile, .c3.row.m-flex>.col.x3--mobile, .c3--mobile.row.m-flex>.col.x3 {flex-basis: 100%;}
+  .c4--mobile--tablet.row.m-flex>.col.x3--mobile, .c4--mobile.row.m-flex>.col.x3--mobile--tablet, .c4--mobile.row.m-flex>.col.x3--mobile, .c4.row.m-flex>.col.x3--mobile, .c4--mobile.row.m-flex>.col.x3 {flex-basis: 75%;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { /* --tablet */
+  .row.m-flex>.col.x2--tablet {flex-grow: 2;}
+  .row.m-flex>.col.x3--tablet {flex-grow: 3;}
+  .c2--tablet--desktop.row.m-flex>.col.x2--tablet, .c2--tablet.row.m-flex>.col.x2--tablet--desktop, .c2--mobile--tablet.row.m-flex>.col.x2--tablet, .c2--tablet.row.m-flex>.col.x2--mobile--tablet, .c2--tablet.row.m-flex>.col.x2--tablet, .c2.row.m-flex>.col.x2--tablet, .c2--tablet.row.m-flex>.col.x2 {flex-basis: 100%;}
+  .c3--tablet--desktop.row.m-flex>.col.x2--tablet, .c3--tablet.row.m-flex>.col.x2--tablet--desktop, .c3--mobile--tablet.row.m-flex>.col.x2--tablet, .c3--tablet.row.m-flex>.col.x2--mobile--tablet, .c3--tablet.row.m-flex>.col.x2--tablet, .c3.row.m-flex>.col.x2--tablet, .c3--tablet.row.m-flex>.col.x2 {flex-basis: 66.66%;}
+  .c4--tablet--desktop.row.m-flex>.col.x2--tablet, .c4--tablet.row.m-flex>.col.x2--tablet--desktop, .c4--mobile--tablet.row.m-flex>.col.x2--tablet, .c4--tablet.row.m-flex>.col.x2--mobile--tablet, .c4--tablet.row.m-flex>.col.x2--tablet, .c4.row.m-flex>.col.x2--tablet, .c4--tablet.row.m-flex>.col.x2 {flex-basis: 50%;}
+  .c3--tablet--desktop.row.m-flex>.col.x3--tablet, .c3--tablet.row.m-flex>.col.x3--tablet--desktop, .c3--mobile--tablet.row.m-flex>.col.x3--tablet, .c3--tablet.row.m-flex>.col.x3--mobile--tablet, .c3--tablet.row.m-flex>.col.x3--tablet, .c3.row.m-flex>.col.x3--tablet, .c3--tablet.row.m-flex>.col.x3 {flex-basis: 100%;}
+  .c4--tablet--desktop.row.m-flex>.col.x3--tablet, .c4--tablet.row.m-flex>.col.x3--tablet--desktop, .c4--mobile--tablet.row.m-flex>.col.x3--tablet, .c4--tablet.row.m-flex>.col.x3--mobile--tablet, .c4--tablet.row.m-flex>.col.x3--tablet, .c4.row.m-flex>.col.x3--tablet, .c4--tablet.row.m-flex>.col.x3 {flex-basis: 75%;}
+}
+@media screen and (min-width: 992px) { /* --desktop */
+  .row.m-flex>.col.x2--desktop {flex-grow: 2;}
+  .row.m-flex>.col.x3--desktop {flex-grow: 3;}
+  .c2--tablet--desktop.row.m-flex>.col.x2--desktop, .c2--desktop.row.m-flex>.col.x2--tablet--desktop, .c2--desktop.row.m-flex>.col.x2--desktop, .c2.row.m-flex>.col.x2--desktop, .c2--desktop.row.m-flex>.col.x2 {flex-basis: 100%;}
+  .c3--tablet--desktop.row.m-flex>.col.x2--desktop, .c3--desktop.row.m-flex>.col.x2--tablet--desktop, .c3--desktop.row.m-flex>.col.x2--desktop, .c3.row.m-flex>.col.x2--desktop, .c3--desktop.row.m-flex>.col.x2 {flex-basis: 66.66%;}
+  .c4--tablet--desktop.row.m-flex>.col.x2--desktop, .c4--desktop.row.m-flex>.col.x2--tablet--desktop, .c4--desktop.row.m-flex>.col.x2--desktop, .c4.row.m-flex>.col.x2--desktop, .c4--desktop.row.m-flex>.col.x2 {flex-basis: 50%;}
+  .c3--tablet--desktop.row.m-flex>.col.x3--desktop, .c3--desktop.row.m-flex>.col.x3--tablet--desktop, .c3--desktop.row.m-flex>.col.x3--desktop, .c3.row.m-flex>.col.x3--desktop, .c3--desktop.row.m-flex>.col.x3 {flex-basis: 100%;}
+  .c4--tablet--desktop.row.m-flex>.col.x3--desktop, .c4--desktop.row.m-flex>.col.x3--tablet--desktop, .c4--desktop.row.m-flex>.col.x3--desktop, .c4.row.m-flex>.col.x3--desktop, .c4--desktop.row.m-flex>.col.x3 {flex-basis: 75%;}
+}
+@media screen and (max-width: 991px) { /* --mobile--tablet */
+  .row.m-flex>.col.x2--mobile--tablet {flex-grow: 2;}
+  .row.m-flex>.col.x3--mobile--tablet {flex-grow: 3;}
+  .c2--mobile--tablet.row.m-flex>.col.x2--mobile--tablet, .c2.row.m-flex>.col.x2--mobile--tablet, .c2--mobile--tablet.row.m-flex>.col.x2 {flex-basis: 100%;}
+  .c3--mobile--tablet.row.m-flex>.col.x2--mobile--tablet, .c3.row.m-flex>.col.x2--mobile--tablet, .c3--mobile--tablet.row.m-flex>.col.x2 {flex-basis: 66.66%;}
+  .c4--mobile--tablet.row.m-flex>.col.x2--mobile--tablet, .c4.row.m-flex>.col.x2--mobile--tablet, .c4--mobile--tablet.row.m-flex>.col.x2 {flex-basis: 50%;}
+  .c3--mobile--tablet.row.m-flex>.col.x3--mobile--tablet, .c3.row.m-flex>.col.x3--mobile--tablet, .c3--mobile--tablet.row.m-flex>.col.x3 {flex-basis: 100%;}
+  .c4--mobile--tablet.row.m-flex>.col.x3--mobile--tablet, .c4.row.m-flex>.col.x3--mobile--tablet, .c4--mobile--tablet.row.m-flex>.col.x3 {flex-basis: 75%;}
+}
+@media screen and (min-width: 768px) { /* --tablet--desktop */
+  .row.m-flex>.col.x2--tablet--desktop {flex-grow: 2;}
+  .row.m-flex>.col.x3--tablet--desktop {flex-grow: 3;}
+  .c2--tablet--desktop.row.m-flex>.col.x2--tablet--desktop, .c2.row.m-flex>.col.x2--tablet--desktop, .c2--tablet--desktop.row.m-flex>.col.x2 {flex-basis: 100%;}
+  .c3--tablet--desktop.row.m-flex>.col.x2--tablet--desktop, .c3.row.m-flex>.col.x2--tablet--desktop, .c3--tablet--desktop.row.m-flex>.col.x2 {flex-basis: 66.66%;}
+  .c4--tablet--desktop.row.m-flex>.col.x2--tablet--desktop, .c4.row.m-flex>.col.x2--tablet--desktop, .c4--tablet--desktop.row.m-flex>.col.x2 {flex-basis: 50%;}
+  .c3--tablet--desktop.row.m-flex>.col.x3--tablet--desktop, .c3.row.m-flex>.col.x3--tablet--desktop, .c3--tablet--desktop.row.m-flex>.col.x3 {flex-basis: 100%;}
+  .c4--tablet--desktop.row.m-flex>.col.x3--tablet--desktop, .c4.row.m-flex>.col.x3--tablet--desktop, .c4--tablet--desktop.row.m-flex>.col.x3 {flex-basis: 75%;}
+}
+
+@media screen and (max-width: 767px) {
+  .float-right--mobile  {float: right!important;}
+  .align-left--mobile   {text-align: left!important;}
+  .align-center--mobile {text-align: center!important;}
+  .align-right--mobile  {text-align: right!important;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .float-right--tablet  {float: right!important;}
+  .align-left--tablet   {text-align: left!important;}
+  .align-center--tablet {text-align: center!important;}
+  .align-right--tablet  {text-align: right!important;}
+}
+@media screen and (min-width: 992px) {
+  .float-right--desktop  {float: right!important;}
+  .align-left--desktop   {text-align: left!important;}
+  .align-center--desktop {text-align: center!important;}
+  .align-right--desktop  {text-align: right!important;}
+}
+@media screen and (max-width: 991px) {
+  .float-right--mobile--tablet  {float: right!important;}
+  .align-left--mobile--tablet   {text-align: left!important;}
+  .align-center--mobile--tablet {text-align: center!important;}
+  .align-right--mobile--tablet  {text-align: right!important;}
+}
+@media screen and (min-width: 768px) {
+  .float-right--tablet--desktop  {float: right!important;}
+  .align-left--tablet--desktop   {text-align: left!important;}
+  .align-center--tablet--desktop {text-align: center!important;}
+  .align-right--tablet--desktop  {text-align: right!important;}
+}

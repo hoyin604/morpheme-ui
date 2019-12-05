@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js" lang="zh-hant">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/morpheme.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/theme.css" charset="utf-8">
+<script src="js/modernizr-custom.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/custom-event.js"></script>
+<script src="js/intersection-observer.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/morpheme-util.js"></script>
+<script src="js/morpheme-core.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+<h3>demo</h3>
+<h4>Multi-level menu</h4>
+
+<ul class=" item-list">
+  <li><a href="#" title="a">menu item 1</a></li>
+  <li><a href="#">menu item 2</a></li>
+  <li>
+    <a href="#">menu item 3</a>
+    <ul class="item-list">
+      <li><a href="#">level 2 - 3.1</a></li>
+      <li><a href="#">level 2 - 3.2</a></li>
+      <li><a href="#">level 2 - 3.3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">menu item 4</a></li>
+  <li>
+    <a href="#">menu item 5</a>
+    <ul class="item-list">
+      <li>
+        <a href="#">level 2 - 5.1</a>
+        <ul class="item-list">
+          <li><a href="#">level 3 - 5.1.1</a></li>
+          <li><a href="#">level 3 - 5.1.2</a></li>
+          <li><a href="#">level 3 - 5.1.3</a></li>
+        </ul>
+
+      </li>
+      <li><a href="#">level 2 - 5.2</a></li>
+    </ul>
+
+  </li>
+</ul>
+<h3>.btn</h3>
+<a class="btn" href="#">simple button</a>
+<p class="action-bar">
+  <a class="btn" href="#">OK</a>
+  <a class="btn" href="#">Cancel</a>
+</p>
+<p>
+  Ut enim ad minim veniam, quis <a class="btn" href="#">test</a> <a class="btn" href="#">haha</a>
+  <select>
+    <option value="volvo">veniam</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+</p>
+
+
+<h3>container, row, col</h3>
+<div class="container">
+  <div class="c3 r row" data-m-class="m-flex@tablet@desktop">
+    <div class="col">
+      <p>
+        1.1 hahaahh aha ha
+      </p>
+      <p>
+        1.2 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+    </div>
+    <div class="col" data-m-class="x2@tablet x3@desktop">
+      <div class="row">
+        <div class="col full">
+          <p>
+            2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="c2 row">
+        <div class="col">
+          <p>
+            2.1 exercitation
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            2.2 incididunt
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            2.3 eiusmod
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col full">
+      <p>
+        3. blablb blbabsblbbs bsbbls bsbll
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        4. labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+    </div>
+  </div>
+
+  <div class="m-c4-flex--tablet--desktop row">
+    <div class="col">
+      <p>
+        1.1 hahaahh aha ha
+      </p>
+      <p>
+        1.2 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+    </div>
+    <div class="col x2--tablet x3--desktop">
+      <p>
+        2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        3. blablb blbabsblbbs bsbbls bsbll
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        4. labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+    </div>
+  </div>
+
+  <div class="float row">
+    <div class="col">
+      <p>
+        hahaahh aha ha
+      </p>
+      <p>
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h3>
+      <h2>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h3>
+      <h3>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h3>
+      <p>
+        hahaahh aha ha
+      </p>
+      <p>
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        blablb blbabsblbbs bsbbls bsbll
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

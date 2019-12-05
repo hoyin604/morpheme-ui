@@ -1,0 +1,44 @@
+/* ==== keyframe ============================================================ */
+@keyframes kf_zoom_in {
+  0%   {opacity:0; transform: scale(0.9,0.9);}
+  100% {opacity:1; transform: scale(1,1);}
+}
+@keyframes kf_zoom_out_large {
+  0%   {transform: scale(1,1);}
+  100% {transform: scale(1.2,1.2) translateY(100px);}
+}
+@keyframes kf_zoom_in_pop {
+  0%   {opacity:0; transform: scale(0.2,0.2);}
+  90%  {opacity:1; transform: scale(1.1,1.1);}
+  100% {opacity:1; transform: scale(1,1);}
+}
+@keyframes kf_fade_in {
+  0%   {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes kf_fade_out {
+  0%   {opacity:1;}
+  100% {opacity:0;}
+}
+@keyframes kf_fade_out_down {
+  0%   {opacity:1;}
+  100% {opacity:0; transform: translateY(30px);}
+}
+@keyframes kf_fade_in_pan_left {
+  0%   {opacity:0; transform: translateX(20px);}
+  100% {opacity:1; transform: translateX(0px);}
+}
+@keyframes kf_pan_left {
+  0%   {transform: translateX(0px);}
+  100% {transform: translateX(800px);}
+}
+@keyframes kf_jump {
+  0%   {transform: translateY(0);}
+  50%  {transform: translateY(-8px);}
+  100% {transform: translateY(0);}
+}
+@keyframes kf_jump_up {
+  0%   {transform: translateY(0);}
+  50%  {transform: translateY(8px);}
+  100% {transform: translateY(0);}
+}
