@@ -1,0 +1,21 @@
+/* .item-list */
+ul.item-list {
+  padding: 16px 10px;
+  margin: 20px 0px 0px 0px;
+}
+ul.item-list li {
+  padding: 10px;
+}
+
+ul.item-list a,
+ul.item-list span {
+  padding: 10px;
+  margin: 0px;
+}
+
+ul.item-list .divider {
+  height: 0px;
+  margin: 0px;
+  overflow: hidden;
+  border-top: 1px solid;
+}

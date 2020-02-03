@@ -1,0 +1,25 @@
+/* icon */
+.icon,
+.with-icon::before,
+.with-icon-after::after {
+  width:  1em;
+  height: 1em;
+}
+
+.icon.backtotop,
+.with-icon.backtotop::before,
+.with-icon-after.backtotop::after {
+  background-image: url('../../img/icon-backtotop.png');
+}
+
+.icon.point {
+  width: 36px;
+  height: 36px;
+  background-image: url('../../img/icon-point.png');
+}
+
+.icon.chevron-round,
+.with-icon.chevron-round::before,
+.with-icon-after.chevron-round::after {
+  background-image: url('../../img/icon-chevron-round-down-white.png');
+}

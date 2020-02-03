@@ -15,6 +15,7 @@ img, svg, input, button, select, textarea, label, output, cite, progress {
   vertical-align: baseline;
 }
 input, button, select, option, optgroup, textarea, address {
+  color: inherit;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -250,11 +251,6 @@ ul.item-list.m-flex.r ul.item-list>li,
   height: 100px;
 }
 
-/* mCustomScrollbar */
-.mCustomScrollbar {
-  height: 100%;
-  overflow: hidden;
-}
 
 .drag-disable, .drag-disable * {
   user-select: none;
@@ -430,3 +426,14 @@ ol.custom {
   ol.custom.set-3>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
     content: counter(article-main-custom-ol-lev6, lower-roman) ".";
   }
+
+/* custom form elemnts */
+form.custom input, form.custom button, form.custom select {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+form.custom button, form.custom input[type=checkbox], form.custom input[type=radio] {
+  cursor: pointer;
+}

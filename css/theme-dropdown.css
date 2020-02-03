@@ -1,0 +1,51 @@
+/* .dropdown */
+  .dropdown>.toggler {
+    display: block;
+    position: relative;
+  }
+  .dropdown select {
+    display: none;
+    outline: 0;
+  }
+  .dropdown .item-list {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    overflow: hidden;
+    z-index: 100;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+  }
+    .dropdown.active .item-list {
+      display: block;
+    }
+    .dropdown.active .item-list>li.active a {
+      background-color: #C0C0C0;
+    }
+
+  html.appearance.csspointerevents .dropdown.use-os-select select,
+  html.appearance.csspointerevents.touchevents .dropdown[data-sc-class~='use-os-select'] select {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    border-radius: 0px;
+    border: none;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+          cursor: pointer;
+  }
+    html.appearance.csspointerevents .dropdown.use-os-select .toggler,
+    html.appearance.csspointerevents.touchevents .dropdown[data-sc-class~='use-os-select'] .toggler {
+      z-index: 20;
+      pointer-events: none;
+    }
+    html.appearance.csspointerevents .dropdown.use-os-select .item-list,
+    html.appearance.csspointerevents.touchevents .dropdown[data-sc-class~='use-os-select'] .item-list {
+      display: none;
+    }
