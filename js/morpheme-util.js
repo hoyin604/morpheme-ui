@@ -304,3 +304,4 @@ Morpheme.Util.markProcessed = function($el, type) {
     Morpheme.Util.addMData($el, "processed", type);
   }
 }
+console.log(Morpheme);
