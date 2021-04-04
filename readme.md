@@ -1,12 +1,11 @@
 morpheme-ui
 ===========
 
-- a ui-plug-in/widget builder
-- it will not replace all the things. it only try unified something which have been done by jquery plug-in or bootstrap
-- to atomizise everything in complex ui so that more flexibility and can be easiler mix and match
+- front-end css/js only ui plug-in/widget library
+- to atomizise complex ui, so that it can be easiler mix and match
 
 now problem:
-- lots of plugins in a same project
+- lots of plugins and some a very similar in a same project (e.g. use both slick and carousel)
 - hard to choose plugin when they have limitation and wrong customization
 - not well integrated, some need may implement of different plugin with different way
 - lots of efford to customized plugin with css
@@ -21,8 +20,13 @@ now solution:
 - for example some menu in bootstrap assume long wide menu @deskop and column menu @mobile and cannot be change
 - complicate js widget e.g. slick can be disable on some responsive view
 
-everything is item-list/active/trigger/exclutive or not
--------------------------------------------------------
+our concern:
+- 2 types of data: collection/object
+- use simple concept like active class to unify and simplify programming afford
+- trigger (active state, exclutive / non-exclutive)
+- item-list (a set of elements with the same kind)
+- group (a set of elements with different kind)
+
 - do you ever thinking about accordion / carousel / radio btn group / bar menu / tree menu etc. most the same thing but only little bit different?
 - accordion :
   - a list of items
@@ -85,8 +89,21 @@ e.g. all overlay belongs to a item-list call 'modal_ui' which include all overla
 when any item like selector with id="country" have been activated. a class will be added to body named 'modal_ui__country_selector'
 if this selector also belongs to other item-list(body) call 'overlay'. body will have 2 class added "modal_ui__country selector__country"
 
+our solution:
+- responive ui
+- special trigger link pan, scroll
+- animation/transition
+- carousel/tab/overlay/modal alert/accordian/scroll_section
+- btn/btn group/input/checkBox/radio
+- selector/pulldown/menu
+- custom number order list
+- icon
+- pagination:dot/number/arrow
 
-
+css:
+  - morpheme.css
+    - tag reset
+    - defined functional property, not visual property
 - responsive by reference the class in html tag e.g.
   - rv__mobile
   - rv__tablet
@@ -111,23 +128,44 @@ if this selector also belongs to other item-list(body) call 'overlay'. body will
 
 example action:
 - become custom selector only for desktop device (data-ac: add class value if not exist)
-  `<div class="container" data-ac="selector @dv__desktop">...</div>`
+  `<div class="container" data-add-class="selector @dv__desktop">...</div>`
   - only mobile will be native, larger device such as iPad or iPad pro will use custon selector like desktop
-  `<div class="container" data-ac="selector @dv__desktop|dv__tablet">...</div>`
+  `<div class="container" data-add-class="selector @dv__desktop@dv__tablet">...</div>`
 
 - responsive img:
   replace the loading image with responsive images (data-s-<attr>: set value of the attribute to this one)
-  `<img src="data:..." data-s-src="/img/640x2w.jpg @rv__mobile|rv__desktop, /img/400w.jpg @rv_tablet">`
+  `<img src="data:..." data-set-src="/img/640x2w.jpg @rv__mobile|rv__desktop, /img/400w.jpg @rv_tablet">`
 
 - use js fallback when no srcset support (like ie6-11) (data-s-<attr> (with special value __remove_attr__): remove the whole attribute)
   `<img srcset="/img/640x2w.jpg 480w,
                 /img/400w.jpg 767w,
                 /img/640x2w.jpg 1023w"
-        data-s-src="/img/640x2w.jpg @no-srcset"
-        data-s-srcset="__remove_attr__ @no-srcset" >`
+        data-set-src="/img/640x2w.jpg @no-srcset"
+        data-set-srcset="__remove_attr__ @no-srcset" >`
 
 - using js lazy loading plugin when no native support
-  `<img loading="lazy" data-ac="lazy @no-lazy" >`
+  `<img loading="lazy" data-add-class="lazy @no-lazy" >`
+
+command:
+- action(add/replace/remove)
+- target(object.property)
+- value(template) (string|property)
+- condition
+
+- condition:
+html@device__desktop (object@property__value) html/body/this can be omitt, just like window/document/this
+
+- value(template):
+- simple string:
+  "abcdef"
+  string with value:
+  count:${list/count}
+
+- path as object locator:
+  /abc/def - "/" refer to global
+  ../ - parent
+  ./ - currrent
+  abc - look up (current/default/global)
 
 click example:
 
@@ -135,7 +173,7 @@ click example:
   `<a class="btn" href="#" data-ac="active =click"></a>`
 
 - click each time will on/off highlight (data-tc : trigger class)
-  `<a class="btn" href="#" data-tc="active =click"></a>`
+  `<a class="btn" href="#" data-add-class="active =click"></a>`
 
 - click each time will on/off highlight, btn is highlight initally
   `<a class="active btn" href="#" data-tc="active =click"></a>`
@@ -158,7 +196,7 @@ click example:
 - example of custom selector
 before changes:
 ```
-<div class="dropdown container" data-ac="selector @dv__desktop">
+<div class="dropdown container" data-add-class="selector-- @dv__desktop">
   <select name="cars" id="cars">
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
@@ -169,7 +207,7 @@ before changes:
 ```
 
 ```
-<div class="dropdown selector container selector__i0" data-ac="selector @dv__desktop">
+<div class="dropdown selector-- container selector__i0" data-ac="selector @dv__desktop">
   <select name="cars" id="cars">
     <option value="volvo" selected>Volvo</option>
     <option value="saab">Saab</option>

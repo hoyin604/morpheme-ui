@@ -1,24 +1,16 @@
-*,*::before,*::after {
-  box-sizing: border-box;
-}
+@charset "utf-8";
 
 /* ==== tag reset =========================================================== */
-html {
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 article, aside, figcaption, figure, picture, footer, header, hgroup, main, nav, section, address, legend, details, summary {
+  position: relative;
   display: block;
+}
+ul,ol,li {
+  position: relative;
 }
 img, svg, input, button, select, textarea, label, output, cite, progress {
   display: inline-block;
   vertical-align: baseline;
-}
-input, button, select, option, optgroup, textarea, address {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
 }
 template {
   display: none;
@@ -30,7 +22,45 @@ th {
   text-align: inherit;
 }
 
+/* ==== default setting (functional) ======================================== */
+*,
+*::before,
+*::after {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+	box-sizing: inherit;
+}
+
+section>*:first-child,
+nav>*:first-child,
+article>*:first-child,
+aside>*:first-child,
+header>*:first-child,
+footer>*:first-child {
+  margin-top: 0px;
+}
+section>*:last-child,
+nav>*:first-child,
+article>*:first-child,
+aside>*:first-child,
+header>*:first-child,
+footer>*:first-child {
+  margin-bottom: 0px;
+}
+
+
 /* ==== util ================================================================ */
+
+.disabled {
+  pointer-events: none;
+}
+html.pointer-events-support_is__0 .disabled {
+  cursor:default;
+}
 
 /* .btn */
 .btn {
@@ -303,10 +333,6 @@ html.touchevents body.overlay-active {
     width: 100%;
   }
 
-html.csspointerevents .disabled {
-  pointer-events: none;
-}
-
 .v-center.m-transform>.inner {
   position: absolute;
   left: 0px;
@@ -320,120 +346,39 @@ html.csspointerevents .disabled {
 }
 
 /* custom order number list */
-ol.custom {
+ol.m {
   list-style: none;
   padding-left: 0px;
 }
-  ol.custom li {
-    position: relative;
-    padding-left: 2.4em; /* more space and number will align on left */
-  }
-    ol.custom li:before {
-      display: block;
-      position: absolute;
-      left: 0px;
-    }
-  ol.custom>ol {
-    counter-reset: article-main-custom-ol-lev1;
-  }
-  ol.custom>ol>li>ol {
-    counter-reset: article-main-custom-ol-lev2;
-  }
-  ol.custom>ol>li>ol>li>ol {
-    counter-reset: article-main-custom-ol-lev3;
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol {
-    counter-reset: article-main-custom-ol-lev4;
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li>ol {
-    counter-reset: article-main-custom-ol-lev5;
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-    counter-reset: article-main-custom-ol-lev6;
-  }
-  ol.custom>ol>li:before {
-    counter-increment: article-main-custom-ol-lev1;
-  }
-  ol.custom>ol>li>ol>li:before {
-    counter-increment: article-main-custom-ol-lev2;
-  }
-  ol.custom>ol>li>ol>li>ol>li:before {
-    counter-increment: article-main-custom-ol-lev3;
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li:before {
-    counter-increment: article-main-custom-ol-lev4;
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    counter-increment: article-main-custom-ol-lev5;
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    counter-increment: article-main-custom-ol-lev6;
-  }
-  /* set 1: 1. a. i. repeat... */
-  ol.custom>ol>li:before {
-    content: counter(article-main-custom-ol-lev1) ".";
-  }
-  ol.custom>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev2, lower-latin) ".";
-  }
-  ol.custom>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev3, lower-roman) ".";
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev4) ".";
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev5, lower-latin) ".";
-  }
-  ol.custom>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev6, lower-roman) ".";
-  }
-  /* set 2: 1) a) i) (1) (a) (i) repeat... */
-  ol.custom.set-2>ol>li:before {
-    content: counter(article-main-custom-ol-lev1) ")";
-  }
-  ol.custom.set-2>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev2, lower-latin) ")";
-  }
-  ol.custom.set-2>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev3, lower-roman) ")";
-  }
-  ol.custom.set-2>ol>li>ol>li>ol>li>ol>li:before {
-    content: "(" counter(article-main-custom-ol-lev4) ")";
-  }
-  ol.custom.set-2>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    content: "(" counter(article-main-custom-ol-lev5, lower-latin) ")";
-  }
-  ol.custom.set-2>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    content: "(" counter(article-main-custom-ol-lev6, lower-roman) ")";
-  }
-  /* set 3: 1. (a) (i) a) i) i. repeat... */
-  ol.custom.set-3>ol>li:before {
-    content: counter(article-main-custom-ol-lev1) ".";
-  }
-  ol.custom.set-3>ol>li>ol>li:before {
-    content: "(" counter(article-main-custom-ol-lev2, lower-latin) ")";
-  }
-  ol.custom.set-3>ol>li>ol>li>ol>li:before {
-    content: "(" counter(article-main-custom-ol-lev3, lower-roman) ")";
-  }
-  ol.custom.set-3>ol>li>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev4, lower-latin) ")";
-  }
-  ol.custom.set-3>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev5, lower-roman) ")";
-  }
-  ol.custom.set-3>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-    content: counter(article-main-custom-ol-lev6, lower-roman) ".";
+ol.m li {
+  position: relative;
+  padding-left: 2.4em; /* more space and number will align on left */
+}
+  ol.m li:before {
+    display: block;
+    position: absolute;
+    left: 0px;
   }
 
 /* custom form elemnts */
-form.custom input, form.custom button, form.custom select {
+form.custom input,
+form.custom button,
+form.custom select {
   display: block;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-form.custom button, form.custom input[type=checkbox], form.custom input[type=radio] {
+form.custom button,
+form.custom input[type=checkbox],
+form.custom input[type=radio] {
   cursor: pointer;
+}
+
+
+/* platform specific rules */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

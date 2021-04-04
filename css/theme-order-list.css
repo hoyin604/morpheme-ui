@@ -1,0 +1,97 @@
+/* custom order number list */
+ol.m li {
+  padding-left: 2.4em; /* more space and number will align on left */
+}
+ol.m>ol {
+  counter-reset: ol-m-lev1;
+}
+ol.m>ol>li>ol {
+  counter-reset: ol-m-lev2;
+}
+ol.m>ol>li>ol>li>ol {
+  counter-reset: ol-m-lev3;
+}
+ol.m>ol>li>ol>li>ol>li>ol {
+  counter-reset: ol-m-lev4;
+}
+ol.m>ol>li>ol>li>ol>li>ol>li>ol {
+  counter-reset: ol-m-lev5;
+}
+ol.m>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
+  counter-reset: ol-m-lev6;
+}
+ol.m>ol>li:before {
+  counter-increment: ol-m-lev1;
+}
+ol.m>ol>li>ol>li:before {
+  counter-increment: ol-m-lev2;
+}
+ol.m>ol>li>ol>li>ol>li:before {
+  counter-increment: ol-m-lev3;
+}
+ol.m>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: ol-m-lev4;
+}
+ol.m>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: ol-m-lev5;
+}
+ol.m>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: ol-m-lev6;
+}
+/* set 1: 1. a. i. repeat... */
+ol.m.set-1>ol>li:before {
+  content: counter(ol-m-lev1) ".";
+}
+ol.m.set-1>ol>li>ol>li:before {
+  content: counter(ol-m-lev2, lower-latin) ".";
+}
+ol.m.set-1>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev3, lower-roman) ".";
+}
+ol.m.set-1>ol>li>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev4) ".";
+}
+ol.m.set-1>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev5, lower-latin) ".";
+}
+ol.m.set-1>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev6, lower-roman) ".";
+}
+/* set 2: 1) a) i) (1) (a) (i) repeat... */
+ol.m.set-2>ol>li:before {
+  content: counter(ol-m-lev1) ")";
+}
+ol.m.set-2>ol>li>ol>li:before {
+  content: counter(ol-m-lev2, lower-latin) ")";
+}
+ol.m.set-2>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev3, lower-roman) ")";
+}
+ol.m.set-2>ol>li>ol>li>ol>li>ol>li:before {
+  content: "(" counter(ol-m-lev4) ")";
+}
+ol.m.set-2>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  content: "(" counter(ol-m-lev5, lower-latin) ")";
+}
+ol.m.set-2>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  content: "(" counter(ol-m-lev6, lower-roman) ")";
+}
+/* set 3: 1. (a) (i) a) i) i. repeat... */
+ol.m.set-3>ol>li:before {
+  content: counter(ol-m-lev1) ".";
+}
+ol.m.set-3>ol>li>ol>li:before {
+  content: "(" counter(ol-m-lev2, lower-latin) ")";
+}
+ol.m.set-3>ol>li>ol>li>ol>li:before {
+  content: "(" counter(ol-m-lev3, lower-roman) ")";
+}
+ol.m.set-3>ol>li>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev4, lower-latin) ")";
+}
+ol.m.set-3>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev5, lower-roman) ")";
+}
+ol.m.set-3>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  content: counter(ol-m-lev6, lower-roman) ".";
+}
